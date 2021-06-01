@@ -9,11 +9,13 @@ Zixuan Li, Xiaolong Jin, Wei Li, Saiping Guan, Jiafeng Guo, Huawei Shen, Yuanzhu
 ## Quick Start
 
 ### Environment variables & dependencies
+```
 conda create -n regcn python=3.7
 
 conda activate regcn
 
 pip install -r requirement.txt
+```
 
 ### Process data
 First, unpack the data files 
