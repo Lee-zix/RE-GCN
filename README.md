@@ -40,9 +40,14 @@ python main.py -d ICEWS14s --train-history-len 3 --test-history-len 3 --dilate-l
 ### Evaluate models
 To generate the evaluation results of a pre-trained model, simply add the `--test` flag in the commands above. 
 
-For example, the following command performs inference and prints the evaluation results (on both dev and test sets).
+For example, the following command performs inference and prints the evaluation results under single step inference (with ground truth history).
 ```
 python main.py -d ICEWS14s --train-history-len 3 --test-history-len 3 --dilate-len 1 --lr 0.001 --n-layers 2 --evaluate-every 1 --gpu=0 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm --weight 0.5  --entity-prediction --relation-prediction --add-static-graph --angle 10 --discount 1 --task-weight 0.7 --gpu 0 --test
+```
+
+The following command performs inference and prints the evaluation results under multi step inference (without ground truth history).
+```
+python main.py -d ICEWS14s --train-history-len 3 --test-history-len 3 --dilate-len 1 --lr 0.001 --n-layers 2 --evaluate-every 1 --gpu=0 --n-hidden 200 --self-loop --decoder convtranse --encoder uvrgcn --layer-norm --weight 0.5  --entity-prediction --relation-prediction --add-static-graph --angle 10 --discount 1 --task-weight 0.7 --gpu 0 --test --multi-step --topk 0
 ```
 
 
