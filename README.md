@@ -52,7 +52,7 @@ python main.py -d ICEWS14s --train-history-len 3 --test-history-len 3 --dilate-l
 
 
 ### Change the hyperparameters
-To get the optimal result reported in the paper, change the hyperparameters and other experiment set up accordding to the section 5.1.4 in the paper (https://arxiv.org/abs/2104.10353). 
+To get the optimal result reported in the paper, change the hyperparameters and other experiment set up according to Section 5.1.4 in the paper (https://arxiv.org/abs/2104.10353). 
 
 
 ## Citation
