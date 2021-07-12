@@ -18,9 +18,9 @@ pip install -r requirement.txt
 ```
 
 ### Process data
-First, unpack the data files 
+First, unzip and unpack the data files 
 ```
-tar xvzf data-release.tgz
+tar -zxvf data-release.tar.gz
 ```
 For the three ICEWS datasets `ICEWS18`, `ICEWS14`, `ICEWS05-15`, go into the dataset folder in the `./data` directory and run the following command to construct the static graph.
 ```
