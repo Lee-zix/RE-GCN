@@ -84,7 +84,9 @@ def r2e(triplets, num_rels):
     r_to_e = defaultdict(set)
     for j, (src, rel, dst) in enumerate(triplets):
         r_to_e[rel].add(src)
+        r_to_e[rel].add(dst)
         r_to_e[rel+num_rels].add(src)
+        r_to_e[rel+num_rels].add(dst)
     r_len = []
     e_idx = []
     idx = 0
