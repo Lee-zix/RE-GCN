@@ -31,7 +31,7 @@ python ent2word.py
 ### Train models
 Then the following commands can be used to train the proposed models. By default, dev set evaluation results will be printed when training terminates.
 
-0.Make dictionary to save models
+0. Make dictionary to save models
 ```
 mkdir models
 ```
