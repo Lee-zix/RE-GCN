@@ -131,7 +131,7 @@ def build_sub_graph(num_nodes, num_rels, triples, use_cuda, gpu):
     g.r_to_e = r_to_e
     g.r_len = r_len
     if use_cuda:
-        g.to(gpu)
+        g = g.to(gpu) 
         g.r_to_e = torch.from_numpy(np.array(r_to_e))
     return g
 
